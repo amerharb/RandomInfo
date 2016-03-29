@@ -15,15 +15,15 @@ public class MainActivity extends AppCompatActivity {
     ImageView v;
 
     String info[] = {"Name: Nancy\nAge: 19"
-            , "Name: Bill\nAge: 22"
-            , "Name: Jack\nAge: 42"
-            , "Name: Brad\nAge: 44"
-            , "Name: Michael\nAge: 64"
-            , "Name: Lisa\nAge: 55"
-            , "Name: Lu\nAge: 34"
-            , "Name: Hanna\nAge: 33"
-            , "Name: Lucy\nAge: 46"
-            , "Name: Tom\nAge: 39"};
+            , "Name: Bill\nAge: 22\nPlace: Malmö"
+            , "Name: Jack\nAge: 42\nPlace: Copenhagen"
+            , "Name: Brad\nAge: 44\nPlace: Stockholm"
+            , "Name: Michael\nAge: 64\nPlace: Kristianstad"
+            , "Name: Lisa\nAge: 55\nPlace: Halmstad"
+            , "Name: Lu\nAge: 34\nPlace: Trellborg"
+            , "Name: Hanna\nAge: 33\nPlace: Damascus"
+            , "Name: Lucy\nAge: 46\nPlace: Dubai"
+            , "Name: Tom\nAge: 39\nPlace: Cairo"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,6 +39,7 @@ public class MainActivity extends AppCompatActivity {
         int i = r.nextInt(10);
 
         t.setText(info[i]);
+
         if (i == 0) {
             v.setImageResource(R.drawable.f0);
         } else if (i == 1) {
@@ -60,6 +61,5 @@ public class MainActivity extends AppCompatActivity {
         } else if (i == 9) {
             v.setImageResource(R.drawable.f9);
         }
-
     }
 }
